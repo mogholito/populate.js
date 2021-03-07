@@ -69,7 +69,11 @@ function populate(form, data, basename) {
 				break;
 
 			case 'date':
-      			element.value = new Date(value).toISOString().split('T')[0];	
+				element.value = new Date(value).toISOString().split('T')[0];	
+				break;
+
+			case 'textarea':
+				element.innerHTML = value;
 				break;
 		}
 
