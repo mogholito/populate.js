@@ -16,8 +16,10 @@ Input types (text, email, select, multiple select, etc) are taken into account b
 	<input type="text" name="address[addr1]" />
 	<input type="text" name="address[city]" />
 	<input type="text" name="address[state]" />
+	
+	<textarea name="bio"></textarea>
 </form>
-````
+```
 
 *JavaScript*
 ```javascript
@@ -31,7 +33,8 @@ var data = {
 		"addr1": "Street name",
 		"city": "City name",
 		"state": "State"
-	}
+	},
+	"bio": "Some longer text with line-breaks.\n\nCool."
 }
 
 // your containing element
